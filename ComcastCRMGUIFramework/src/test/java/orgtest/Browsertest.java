@@ -23,8 +23,9 @@ WebDriver driver=null;
 			driver=new EdgeDriver();
 	}
 		else driver=new ChromeDriver();
-		driver.get(System.getProperty("website"));
+		driver.get(System.getProperty("url"));
 		Thread.sleep(2000);
+		driver.quit();
 	}
 }
 
