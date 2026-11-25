@@ -11,6 +11,7 @@ WebDriver driver=null;
 	@Test
 	public void launchbrowser() throws InterruptedException {
 		String BROWSER=System.getProperty("browser");
+		
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 			
@@ -25,7 +26,7 @@ WebDriver driver=null;
 		else driver=new ChromeDriver();
 		driver.get(System.getProperty("url"));
 		Thread.sleep(2000);
-		driver.quit();
+		
 	}
 }
 
